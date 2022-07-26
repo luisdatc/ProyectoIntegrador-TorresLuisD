@@ -3,7 +3,7 @@
 }
 
 div{
-    background-color: black;
+    background-color: rgb(202, 27, 27);
     text-align: center;
 }
 
@@ -31,18 +31,28 @@ div{
         width: 40%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 33%;
-        top: 630px;
+        left: 30%;
+        top: 600px;
     }
 }
 
 @media (max-width: 375px) {
     #fotodeperfil{
         position: absolute;
-        width: 40%;
+        width: 50%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 33%;
+        top: 60px;
+    }
+}
+@media (max-width: 374px) {
+    #fotodeperfil{
+        position: absolute;
+        width: 40%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 27.5%;
         top: 680px;
     }
 }
@@ -50,7 +60,7 @@ div{
 @media (max-width: 224px) {
     #fotodeperfil{
         position: absolute;
-        width: 50%;
+        width: 40%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 25%;
