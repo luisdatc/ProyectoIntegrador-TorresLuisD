@@ -9,3 +9,8 @@ div{
 h1, h3{
     display: inline;
 }
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
