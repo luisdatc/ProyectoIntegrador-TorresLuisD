@@ -17,6 +17,12 @@ img{
     border-width: medium;
 }
 
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 /*Para la vista de telefono*/
 @media (max-width: 575px){
 

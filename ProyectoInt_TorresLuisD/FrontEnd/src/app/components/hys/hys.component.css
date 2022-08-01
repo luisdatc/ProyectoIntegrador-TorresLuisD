@@ -1,0 +1,10 @@
+.row{
+    background-color: rgb(202, 27, 27);
+    padding: 20px;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
