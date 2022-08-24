@@ -42,7 +42,6 @@ public class CSkills {
         return new ResponseEntity(skill, HttpStatus.OK);
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!sSkills.existsById(id)) {
@@ -52,7 +51,6 @@ public class CSkills {
         return new ResponseEntity(new Mensaje("Skill eliminada"), HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoSkills dtoskills){      
         if(StringUtils.isBlank(dtoskills.getNombreS()))
@@ -66,7 +64,6 @@ public class CSkills {
         return new ResponseEntity(new Mensaje("Skill agregada"), HttpStatus.OK);
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoSkills dtoskills){
         //Validamos si existe el ID

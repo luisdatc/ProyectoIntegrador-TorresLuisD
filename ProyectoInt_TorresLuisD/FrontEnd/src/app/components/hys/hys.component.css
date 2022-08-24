@@ -1,10 +1,19 @@
 .row{
-    background-color: rgb(202, 27, 27);
     padding: 20px;
 }
 
-.container-fluid{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
 }

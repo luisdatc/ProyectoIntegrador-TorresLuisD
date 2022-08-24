@@ -5,6 +5,7 @@ img{
     width: 45px;
 }
 
+/*ICONO LOG IN & LOG OUT*/
 .login.fa-right-from-bracket{
     margin-right: 10px;
     color: rgba(5,115,245,1);
@@ -79,6 +80,7 @@ img{
     30%{transform:rotate(-15deg);}
     40%{transform:rotate(-15deg);}
 }
+
 
 /*Para la vista de telefono*/
 @media (max-width: 575px){

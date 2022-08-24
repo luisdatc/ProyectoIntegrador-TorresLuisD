@@ -51,7 +51,6 @@ public class CProyectos {
         return new ResponseEntity(new Mensaje("producto eliminado"), HttpStatus.OK);
     }
 
-    
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoProyectos dtoproy){      
         if(StringUtils.isBlank(dtoproy.getNombreP()))

@@ -1,3 +1,4 @@
+<!--
 <div class="container" *ngIf="expLab">
     <div class="row">
         <div>
@@ -17,3 +18,45 @@
         </div>
     </div>
 </div>
+-->
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+  
+                <div class="divider d-flex align-items-center my-4">
+                <p class=""></p>
+                </div>
+    
+                <!-- Nombre Institucion input -->
+                <div class="form-outline mb-4 row-2 form-group">
+                    <label class="form-label" for="nombreE">Nuevo Nombre de la Experiencia Laboral</label>
+                    <input type="text" class="form-control" name="nombreE" id="nombreE" [(ngModel)]="expLab.nombreE" required>
+                </div>
+    
+                <!-- Descripcion Educacion input -->
+                <div class="form-outline mb-3 form-group">
+                    <label class="form-label" for="descripcionE">Nueva Descripcion de la Experiencia</label>
+                    <input type="text" class="form-control" name="descripcionE" id="descripcionE" [(ngModel)]="expLab.descripcionE" required>
+                </div>
+    
+                <div class="divider d-flex align-items-center my-4">
+                    <p class=""></p>
+                </div>
+
+                <div class="text-center text-lg-start mt-4 pt-2">
+                <button class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Editar</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    
+  </section>
