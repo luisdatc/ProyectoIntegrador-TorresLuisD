@@ -2,6 +2,42 @@
     padding: 20px;
 }
 
+/*LINEAS DECORATIVAS*/
+h1{
+    font-size: 3rem;
+    width:bold;
+    display:inline;
+    text-decoration: underline #fff;
+    position:relative;
+    color: #fff;
+    bottom: 10px;
+}
+
+
+h1::after, h1::before{
+    content:"";
+    position:absolute;
+    width:150px;
+    height:2px;
+    background-color: #fff;
+    top:1.9rem;
+}
+
+
+h1::after{
+    right:-180px;
+}
+
+h1::before{
+    left:-180px;
+}
+
+#alineado{
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
 .divider:after,
 .divider:before {
 content: "";
@@ -16,4 +52,9 @@ height: calc(100% - 73px);
 .h-custom {
 height: 100%;
 }
+}
+
+.btn.btn-dark{
+    background-color: #3ea4cd;
+    border-color: #3ea4cd;
 }

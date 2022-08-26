@@ -1,30 +1,9 @@
-<!--
-<div class="container-fluid">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreP">Nombre del proyecto</label>
-                    <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionP">Descripcion del proyecto</label>
-                    <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="descripcionP" required>
-                </div>
-                <button class="btn btn-primary">
-                    Agregar proyecto
-                </button>
-
-            </form>
-        </div>
-    </div>
-</div>
--->
+<app-logo-ap></app-logo-ap>
 <section class="vh-100">
     <div class="container-fluid h-custom">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          <img src="../../../assets/proyectos.png"
             class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
@@ -43,7 +22,7 @@
                 <!-- Descripcion Educacion input -->
                 <div class="form-outline mb-3 form-group">
                     <label class="form-label" for="descripcionP">Descripcionde del Proyecto</label>
-                    <input type="text" class="form-control" name="descripcionP" id="descripcionP" [(ngModel)]="descripcionP" required>
+                    <textarea type="text" class="form-control" cols="30" rows="6" name="descripcionP" id="descripcionP" [(ngModel)]="descripcionP" required></textarea>
                 </div>
     
                 <div class="divider d-flex align-items-center my-4">
@@ -51,12 +30,11 @@
                 </div>
 
                 <div class="text-center text-lg-start mt-4 pt-2">
-                <button class="btn btn-primary btn-lg"
-                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Guardar</button>
+                    <button class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Guardar</button>
                 </div>
             </form>
         </div>
       </div>
-    </div>
-    
-  </section>
+    </div> 
+</section>
+<app-footer></app-footer>

@@ -1,31 +1,32 @@
 <div class="container-fluid">
-<div class="row"> 
-    <h3>Proyectos realizados</h3>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-secondary" routerLink="/nuevoproy" *ngIf="isLogged">
+  <div class="row"> 
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
+      <h1>Proyectos realizados</h1>
+      <div>
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
           Nuevo Proyecto
         </button>
       </div>
-      <br>
-      <div class="col lg 1"></div>
-      <div class="col-lg-11">
-        <table class="table table-striped">
-          <tbody>
-            <tr *ngFor="let Proyectos of proy">
-              <td><h4>{{Proyectos.nombreP}}</h4></td>
-              <td>{{Proyectos.descripcionP}}</td>
-              <td *ngIf="isLogged">
-                <button class="btn btn-outline-secondary" routerLink="/editproy/{{Proyectos.id}}">
-                  <i class="bi bi-pencil-square"></i></button>
-              </td>
-              
-              <td *ngIf="isLogged">
-                <button class="btn btn-outline-danger" (click)="delete(Proyectos.id)">
-                <i class="bi bi-trash"></i></button>
-              </td>
-            </tr> 
-          </tbody> 
-        </table>
-      </div>
+    </div>
+    <ul class="col-lg-12 col-md-10 col-sm-12 card-group" id="alineado">
+      <li class="card text-center"  id="exp-456" *ngFor="let Proyectos of proy">
+          <div class="text-center">
+              <div class="card-header">
+                  <h3>
+                    {{Proyectos.nombreP}}
+                  </h3>
+                  <div class="btn-group" role="group" id="bot-expe">
+                      <button class="btn btn-light" routerLink="/editproy/{{Proyectos.id}}" *ngIf="isLogged"><i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger" (click)="delete(Proyectos.id)" *ngIf="isLogged"><i class="bi bi-trash"></i></button>            
+                  </div>
+              </div>
+              <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                      <p>{{Proyectos.descripcionP}}</p>
+                  </blockquote>
+              </div>
+          </div>
+      </li>
+    </ul>
   </div>
 </div>

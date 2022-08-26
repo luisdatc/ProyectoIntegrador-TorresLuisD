@@ -1,16 +1,5 @@
 
 
-footer{
-    color: #fefefe;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-}
-
-.container-fluid{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+*{
+    color: #fff;
 }
